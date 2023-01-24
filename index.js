@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 const db = require("./db.js");
-// require("dotenv").config();
+require("dotenv").config();
 let cors = require("cors");
 app.use(cors());
 
-const port = 5000;
+const port = process.env.PORT;
 
 const AuthController = require("./controller/AuthContoller");
 app.use("/api/auth", AuthController);
