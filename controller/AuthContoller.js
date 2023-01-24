@@ -3,7 +3,7 @@ const router = express.Router();
 const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const config = require("../config");
+const config = require("../config.js");
 const User = require("../model/userModel.js");
 // const userModel = require("../model/userModel");
 
