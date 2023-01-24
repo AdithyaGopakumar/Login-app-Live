@@ -9,5 +9,5 @@ const AuthController = require("./controller/AuthContoller");
 app.use("/api/auth", AuthController);
 
 app.listen(PORT, () => {
-  console.log("listening to port 5000");
+  console.log(`listening to port ${PORT}`);
 });
